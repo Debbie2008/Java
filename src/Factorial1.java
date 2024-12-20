@@ -1,8 +1,8 @@
-package loop;
+
 
 import java.util.Scanner;
 
-public class Factorial3 {
+public class Factorial1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,12 +12,14 @@ public class Factorial3 {
 		int factorial = 1;
 		int i = 1;
 		
-		while(i <= number) {
-			factorial = factorial * i;
+		do {
+			factorial = i * factorial;
 			i ++;
-		}
+		} while(i <= number);
 		System.out.println("The facotiral of " + number + " is " + factorial);
 		b.close();
+					
+			
+		}
 	}
 
-}
